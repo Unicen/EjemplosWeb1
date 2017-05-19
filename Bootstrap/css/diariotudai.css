@@ -1,3 +1,8 @@
 .navbar {
   background-color: red;
 }
+
+.noticia a {
+  color: black;
+  text-decoration: none;
+}
