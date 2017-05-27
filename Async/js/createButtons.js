@@ -3,8 +3,7 @@ function createButtons() {
   let quantity = document.getElementById('quantity').value;
   for (let i = 0; i < quantity; i++) {
     let randTime = Math.random() * 5000;
-    setTimeout((name = i) => { createButton(name) }, randTime);
-
+    setTimeout(function(){createButton(i)}, randTime);
   }
 }
 
@@ -13,6 +12,6 @@ function createButton(name){
   let button = document. createElement("button");
   button.name = name;
   button.innerHTML = "Button " + name;
-  button.addEventListener('click',() => { alert('This is the button: ' + name) })
+  button.addEventListener('click',() => { alert('This is the button: ' + name)});
   div.appendChild(button);
 }
